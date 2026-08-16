@@ -33,8 +33,7 @@ jobs:
             echo "index.html not found"
             exit 1
           fi
-          cp -R "$(dirname "$INDEX")"/. site/
-
+      
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
